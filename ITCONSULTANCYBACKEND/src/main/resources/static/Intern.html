@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotech~IT Consultancy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="./assets/logo-purple-blue.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="Intern.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <img src="./assets/logo-purple-blue.png" alt="Company-Logo" style="height: 30px; width: auto;">
+            <a class="navbar-brand" href="#" style="font-size: 30px; font-weight: 700; color: rgb(93, 92, 92);">Infotech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="consulting.html" id="consultancyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Consulting 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="consultancyDropdown">
+                            <li><a class="dropdown-item" href="consulting.html#management-consultancy">Management-Consultancy</a></li>
+                            <li><a class="dropdown-item" href="consulting.html#sap-implementation">SAP-Implementation</a></li>
+                            <li><a class="dropdown-item" href="consulting.html#sap-upgrade">SAP-Upgrade</a></li>
+                            <li><a class="dropdown-item" href="consulting.html#IT-Resource">Consultancy-It-Resource</a></li>
+                         </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="careerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Career
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careerDropdown">
+                            <li><a class="dropdown-item" href="internship.html">Internship</a></li>
+                            <li><a class="dropdown-item" href="employment.html">Employment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- Internship Section -->
+<section class="internship">
+       
+</section>
+
+<section class="internship-details">
+    <h1>Join Our Team</h1>
+    <p>An internship is a period when organizations offer a work experience for a specific time period. It can showcase your talent and technical and organizational skills. It gives you an opportunity to gain valuable experience in your field as well as to learn new skills. Although not guaranteed, internships will provide you with a chance to land a full-time position. You have to make sure that you add value to the organization, and you will surely be rewarded.</p>
+    
+    <p>We are offering internship opportunities with varied sets of skills and positions. (3-6 Months Internships available)</p>
+</section>
+
+
+<div class="new-form-container">
+    <div class="new-form-card">
+        <h2 class="new-form-heading">APPLY HERE</h2>
+        <form id="internship-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required> <!-- Added name -->
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required> <!-- Added name -->
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" name="phone" placeholder="Enter your phone number" required> <!-- Added name -->
+            </div>
+            <div class="form-group">
+                <label for="position">Position</label>
+                <input type="text" class="form-control" id="position" name="position" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" class="form-control-file" name="resume" required>
+            </div>
+            <button type="submit" class="custom-submit-btn">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+	const internshipForm = document.getElementById('internship-form');
+
+internshipForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(internshipForm); // Use FormData to capture all form fields
+
+    // Log form data for debugging
+    for (const [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
+
+    fetch('http://localhost:8080/internship/apply', {
+        method: 'POST',
+        body: formData // Send FormData directly
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text(); // Change to .text() to handle string responses
+    })
+    .then(data => {
+        alert(data); // Show the response message from the server
+        internshipForm.reset(); // Reset form after submission
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting your application.');
+    });
+});
+
+</script>
+
+<footer id="footer"class="bg-dark text-white ">
+    <div class="container text-center">
+        
+        <h4 class="mb-4" style="letter-spacing: 5px; font-weight: 700;">GET IN TOUCH</h4>
+        <p>Pune, Maharashtra, India</p>
+        <p>+91 7254566532</p>
+        <p><a href="mailto:infotech@gmail.com" class="text-white">infotech@gmail.com</a></p>
+
+       
+        <div class="social-icons mt-4">
+            <a href="https://facebook.com" target="_blank" class="text-white me-3" style="color: aliceblue;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white me-3" style="color: aliceblue;">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-white me-3" style="color: aliceblue;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white me-3" style="color: aliceblue;">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+     
+        <p class="mt-4" style="color: aliceblue;">&copy; 2024 IT Consultancy. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

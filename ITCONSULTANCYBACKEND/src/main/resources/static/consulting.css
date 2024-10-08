@@ -1,0 +1,203 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    font-weight:600;
+    opacity: 1.5;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown background color */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 60vh; /* Hero section height */
+    background-image: url('./assets/consulting-hero.jpg'); /* Background image for hero section */
+    background-size: cover;
+    background-position: center;
+}
+
+/* About Section Styles */
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about-text {
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Services Section Styles */
+.card {
+    border-radius: 10px; /* Rounded corners for cards */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for card titles */
+}
+
+.card-text {
+    font-size: 1rem; /* Font size for card descriptions */
+}
+
+
+
+/* Quote Section Styles */
+.quote-section {
+    background-color: #f8f9fa; /* Light background for quote section */
+    padding: 40px 0; /* Vertical padding for quote section */
+}
+
+blockquote {
+    font-size: 1.2rem; /* Font size for quotes */
+    font-style: italic; /* Italic style for quotes */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark footer background */
+    padding: 40px 0; /* Vertical padding for footer */
+}
+
+footer p {
+    margin: 0; /* Remove margin from footer paragraphs */
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Size for social media icons */
+}
+
+/* General Section Styles */
+#sap-implementation,
+#sap-upgrade,
+#consultancy-it-resource {
+    padding: 60px 0; /* Vertical padding for sections */
+}
+
+#sap-upgrade {
+    background-color: #f8f9fa; /* Light background for SAP Upgrade section */
+}
+
+/* Image Styles */
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Headings Styles */
+h3 {
+    font-size: 2rem; /* Font size for section headings */
+    margin-bottom: 20px; /* Space below the headings */
+}
+#Management-implementation {
+    height: 100vh;
+    background-color: #fff;
+}
+#sap-implementation {
+    height: 100vh;
+    background-color: #fff;
+}
+#sap-upgrade {
+    height: 100vh;
+    background-color: #fff;
+}
+#consultancy-it-resource {
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+ .circular-image {
+    width: 100%; 
+    height: 100%; 
+    max-width: 100%; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-top:4rem;
+    padding: 1.5rem 1.5rem;
+    margin: 0px;
+    margin-bottom: 1.5rem !important;
+    margin-right: 1.5rem; 
+} 
+
+#sap-implementation-info {
+    padding: 40px 0; /* Vertical padding */
+}
+
+.info-box {
+    
+    padding: 20px; /* Padding inside the box */
+    max-width: 800px; /* Max width of the box */
+    
+}
+
+.info-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.75rem;
+    letter-spacing: 0px;
+    font-size: 1rem; /* Font size for the paragraph */
+    color: #4a4a4a; /* Dark text color for contrast */
+    line-height: 1.7; /* Line height for readability */
+}
+
+#heading{
+    text-align: left !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+   font-style: inherit;
+    line-height: 1.1;
+    color: #44425A;
+}
+
+#heading1{
+    text-align: left !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+   font-style: inherit;
+    line-height: 1.1;
+    color: #44425A;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+ 
+  /* Hover effect for the card */
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-hover img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the image */
+.card-hover:hover img {
+    transform: scale(1.1);
+}

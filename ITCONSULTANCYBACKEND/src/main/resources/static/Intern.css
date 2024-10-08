@@ -1,0 +1,152 @@
+body {
+    font-family:'Roboto', sans-serif;;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    font-weight:600;
+    opacity: 1.5;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown background color */
+}
+
+.internship {
+    background: url('assets/Intern.gif') no-repeat center center;
+    background-size:cover;
+    height: calc(100vh - 60px);
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    overflow: hidden;
+}
+
+.internship-details {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: left; 
+    background-color: #fff; 
+} 
+
+ .internship-details h1 {
+    font-size: 2.5em; 
+    color: #434543; 
+    margin: 20px 0; 
+} 
+
+ .internship-details p {
+    font-size: 1.2em; 
+    color: #666;
+    width: auto;
+    line-height: 1.5; 
+    margin: 10px 0;
+} 
+
+
+  /* New Form Container Styles */
+  .new-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.new-form-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.new-form-heading {
+    font-size: 28px;
+    color: #0056b3;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-control, 
+.form-control-file {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.custom-submit-btn {
+    width: 100%;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-submit-btn:hover {
+    background-color: #003d80;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .new-form-container {
+        padding: 10px;
+    }
+
+    .new-form-heading {
+        font-size: 24px;
+    }
+}
+
+footer {
+    color: #f9f9f9;
+    background-color: #000;
+}
+#footer {
+    padding: 5px 10px; /* Further reduce padding */
+    font-size: 12px; /* Smaller font size */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+

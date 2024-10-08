@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="#"> <!-- Link your CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'contactDetails', // Endpoint to fetch user data
+                method: 'GET',
+                success: function(data) {
+                    let rows = '';
+                    data.forEach(function(user) {
+                        rows += `<tr>
+                                     <td>${user.id}</td>
+                                     <td>${user.name}</td>
+                                     <td>${user.email}</td>
+                                     <td>${user.}</td>
+                                  </tr>`;
+                    });
+                    $('#userTable tbody').html(rows); // Populate the table body with rows
+                },
+                error: function() {
+                    alert('Failed to fetch user details');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

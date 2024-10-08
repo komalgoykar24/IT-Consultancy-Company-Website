@@ -1,0 +1,315 @@
+/* Custom Styles */
+body {
+    font-family:'Roboto', sans-serif;;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    font-weight:600;
+    opacity: 1.5;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown background color */
+}
+.hero {
+    height: 100vh;
+    background: url('assets/Emp.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+section {
+    padding: 60px 0;
+}
+
+.emp-intro {
+    width: auto; /* Square format, adjust as necessary */
+    padding: 20px;
+    border: none; /* Square border */
+    margin: 20px auto; /* Center alignment on page */
+    text-align: left; /* Left alignment */
+    background-color:#f9f9f9; /* Light background color */
+}
+
+
+#about {
+    height: 100vh;
+    background-color: #fff;
+}
+#contact{
+    color: #fff;
+    background-color: #333;
+}
+#contact .form-control {
+    border-radius: 0;
+    border: 1px solid #020202;
+}
+
+#contact .btn {
+    background-color: #000;
+    color: white;
+}
+
+#intro {
+    padding: 5px 10px; /* Further reduce padding */
+    font-size: 12px; /* Smaller font size */
+}
+#intro h1{
+    text-align:center;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#intro p{
+    margin-top: 30px;
+
+    text-align: left;
+    font-size: large;
+}
+
+.image-container {
+    display: flex;
+     justify-content: center; /* Centers horizontally */
+    margin-top: 80px; /* Keep the margin on top */
+    height: 600px;
+    width: 600px;
+}
+
+.growt-img {
+    margin-left:800px;
+    /* width: 500px; 
+    height: 500px; */
+    object-fit: cover; 
+    display: block; 
+}
+
+#guiding-values {
+    padding: 50px 0; /* Space above and below */
+}
+#guiding-values h1{
+ font-weight: 500;
+    text-align:center;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card {
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners for cards */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for card titles */
+}
+
+.card-text {
+    font-size: 1rem; /* Font size for card descriptions */
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.card img {
+    max-height: 150px; /* Set a max height for the images */
+    object-fit: contain; /* Ensures the image fits within its container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.card-hover img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the image */
+.card-hover:hover img {
+    transform: scale(1.1);
+}
+
+.card {
+    border-radius: 10px; /* Rounded corners for cards */
+    height: 350px; /* Set a fixed height for all cards */
+    display: flex; /* Use flexbox to allow alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out card content */
+}
+
+.card img {
+    max-height: 150px; /* Set a max height for the images */
+    object-fit: contain; /* Ensures the image fits within its container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for card titles */
+}
+
+.card-text {
+    font-size: 1rem; /* Font size for card descriptions */
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-hover img {
+    margin-top: 0.80rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the image */
+.card-hover:hover img {
+    transform: scale(1.1);
+}
+
+/* Additional styles for sections */
+#who-we-hire {
+    background-color: rgb(255, 255, 255); /* Same background color as other sections */
+}
+
+.gradient-background {
+    background: rgb(255, 255, 255); 
+    border-radius: 10px; 
+   border-style: none;
+    color: rgb(38, 38, 38);
+}
+/* Additional styles for sections */
+
+#who-we-hire h1{
+    font-weight: 500;
+    text-align:left;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+   }
+
+   .Emp-details {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: left; 
+    background-color: #fff; 
+}
+   .Emp-details h1 {
+    font-size: 2.5em; 
+    color: #434543; 
+    margin: 20px 0; 
+}
+
+.Emp-details p {
+    font-size: 1.2em; 
+    color: #666;
+    width: auto;
+    line-height: 1.5; 
+    margin: 10px 0;
+}
+
+
+
+  /* New Form Container Styles */
+.new-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.new-form-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.new-form-heading {
+    font-size: 28px;
+    color: #0056b3;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-control, 
+.form-control-file {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.custom-submit-btn {
+    width: 100%;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-submit-btn:hover {
+    background-color: #003d80;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .new-form-container {
+        padding: 10px;
+    }
+
+    .new-form-heading {
+        font-size: 24px;
+    }
+}
+
+
+
+footer {
+    color: #f9f9f9;
+    background-color: #000;
+}
+#footer {
+    padding: 5px 10px; /* Further reduce padding */
+    font-size: 12px; /* Smaller font size */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+

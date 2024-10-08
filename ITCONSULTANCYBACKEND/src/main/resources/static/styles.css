@@ -1,0 +1,175 @@
+/* Custom Styles */
+body {
+    font-family:'Roboto', sans-serif;;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    font-weight:600;
+    opacity: 1.5;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown background color */
+}
+.hero {
+    height: 100vh;
+    background: url('https://www.valuecoders.com/wp-content/uploads/2023/08/Frame-3.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+#about {
+    height: 100vh;
+    background-color: #fff;
+}
+#contact{
+    color: #fff;
+    background-color: #333;
+}
+#contact .form-control {
+    border-radius: 0;
+    border: 1px solid #020202;
+}
+
+#contact .btn {
+    background-color: #000;
+    color: white;
+}
+
+footer {
+    color: #f9f9f9;
+    background-color: #000;
+}
+
+#about{
+    background:white; 
+}
+
+
+.about-image {
+    width: 500px; /* Set the width for the square */
+    height: 500px; /* Set the height to the same value for a square shape */
+    object-fit: cover; /* Ensures the image covers the entire square */
+    margin-left: auto; /* Pushes the image to the right */
+    margin-right: 0; /* Remove any right margin */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+.about-text {
+    margin-top: 0;
+    margin-left: 250px; /* Space between the image and text */
+}
+about-us-text {
+    color: #333; /* Change text color */
+    line-height: 2; /* Adjust line spacing */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 20px; /* Space below the paragraph */
+    margin-top: 0;
+    padding: 15px; /* Padding around the text */
+    background-color: #f9f9f9; /* Optional: background color for the paragraph */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+#services .p{
+    line-height: 2; /* Adjust line spacing */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 20px; /* Space below the paragraph */
+    margin-top: 0;
+    padding: 15px; /* Padding around the text */
+    background-color: #f9f9f9; /* Optional: background color for the paragraph */
+    border-radius: 8px; 
+}
+#services .mb-4
+{
+    font-weight: 700;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: 5px;
+}
+
+.card {
+    height: 100%; /* Allow cards to take full height of the column */
+}
+
+.card-body {
+    flex-grow: 1; /* Allow card body to grow and fill the card */
+    display: flex; /* Enable flex for card body */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: space-between; /* Distribute space between elements */
+}
+
+.card img {
+    max-height: 200px; /* Set a max height for the image to maintain uniformity */
+    object-fit: cover; /* Ensure the image covers the allocated space */
+    margin-bottom: 1rem; /* Add space below the image */
+}
+
+.quote-section {
+    background-color: rgb(254, 251, 244); /* Light background for the quote section */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the text */
+}
+
+.quote-section blockquote {
+    font-size: 30px; /* Adjust font size */
+    font-style: italic; /* Italic style for the quote */
+    color: #333; /* Text color */
+    font-weight: 700;
+}
+
+#footer {
+    padding: 5px 10px; /* Further reduce padding */
+    font-size: 12px; /* Smaller font size */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
